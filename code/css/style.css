@@ -1,0 +1,26 @@
+div .flexContainer{
+    display:flex;
+    width: 33%;
+    margin: auto;
+    padding: 10px;
+    flex-direction: row;
+}
+
+
+div .workGrid{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    
+}
+
+@media only screen and (max-width:600){
+    .flexContainer{
+        display: grid;
+        width: 100%;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 300px 300px 300px;
+grid-template-areas: "User Research" "UX software" "UI Design";
+
+    }
+}
